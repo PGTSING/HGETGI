@@ -4,8 +4,8 @@ A heterogeneous graph embedding model for predicting interactions between transc
 
 # Overview
 
-- *new_data/* contains the necessary dataset files;
-- *main.py* main function for HGETGI
+- `new_data/` contains the necessary dataset files;
+- `main.py` main function for HGETGI
 
 # Requirement
 

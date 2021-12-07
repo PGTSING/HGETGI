@@ -41,9 +41,9 @@ class EmbeddingTrainer:
         
         torch.autograd.set_detect_anomaly(True)
         optimizer = optim.SparseAdam(list(self.Heterogeneous_Node_Embedding.parameters()), lr=self.initial_lr)
-        scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, len(self.dataloader))  # 余弦退火学习率更新策略
+        scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, len(self.dataloader))  
         writer = SummaryWriter('runs/exp1')
-        net = nn.Sequential(nn.Linear(self.emb_dimension*2, 1))    
+        net = nn.Sequential(nn.Linear(self.emb_dimension*2, 1))     # fully connected layer
         if self.use_cuda:           
             net.to(self.device)
             # net0.to(self.device)
@@ -64,7 +64,8 @@ class EmbeddingTrainer:
                     neg_v = sample_batched[2].to(self.device)
 
                     pos1 ,pos2, neg1, neg2 = self.Heterogeneous_Node_Embedding(pos_u, pos_v, neg_v, self.emb_size)
-
+                    
+                    # fully connected layer
                     data1 = net(pos1)
                     data1 = -F.logsigmoid(data1)
                     

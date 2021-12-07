@@ -30,6 +30,7 @@ class HeterogeneousNodeEmbedding(nn.Module):
         emb_v = self.v_embeddings(pos_v)
         emb_neg_v = self.v_embeddings(neg_v)
         
+        # concatenate a pair of embeddings
         pos1 = torch.cat((emb_u,emb_v), 1)
         pos2 = torch.cat((emb_v,emb_u), 1)
      

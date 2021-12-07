@@ -35,7 +35,7 @@ class DataReader:
                         word_frequency[word] = word_frequency.get(word, 0) + 1
 
                         if self.token_count % 1000000 == 0:
-                            print("Read " + str(int(self.token_count / 1000000)) + "M words.")        #总单词个数
+                            print("Read " + str(int(self.token_count / 1000000)) + "M words.")        
 
         wid = 0
         cc = 0
@@ -53,7 +53,7 @@ class DataReader:
         if self.hasnone == True:
             self.word2id['CS'] = wid
             self.word_frequency[wid] = cc
-            print("Total embeddings: " + str(len(self.word2id) - 1))  # 出现次数大于min_count的单词个数
+            print("Total embeddings: " + str(len(self.word2id) - 1))  
         self.word_count = len(self.word2id)
         print("wid",wid)
         print("frequency",len(word_frequency))

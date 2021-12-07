@@ -30,6 +30,6 @@ if __name__ == '__main__':
     plt.ylabel('True Positive Rate')
     plt.title('ROC Curves')     
     plt.legend(loc='lower right')
-    plt.savefig('piture/AUC')
+    plt.savefig('AUC')
     plt.show()
 

@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ```
 
 # Usage
-The files in `new_data/` contains:
+The files in `new_data/`:
 - "id_TF.txt": The id of transcription factor
 - "id_Target.txt": The id of target gene
 - "id_Disease.txt": The id of disease

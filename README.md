@@ -36,5 +36,6 @@ Use *"main.py"* to train HGETGI model
 python main.py
 ```
 # HGETGI_EXE
+The HGETGI model has been packaged and placed in the release directory, users can download and use the EXE execution program to make predictions.
 
 

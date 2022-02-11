@@ -37,5 +37,6 @@ python main.py
 ```
 # HGETGI_EXE
 The HGETGI model has been packaged and placed in the releases directory. Users can download and use the execution program to make predictions.
+![HGETGI_EXE](https://github.com/PGTSING/HGETGI/blob/main/picture/HGETGI_EXE.jpg)
 
 

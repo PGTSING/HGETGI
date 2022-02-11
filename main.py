@@ -8,7 +8,7 @@ from train import Train
 
 if __name__ == '__main__':
     warnings.filterwarnings('ignore')
-    auc_result, fprs, tprs = Train(path='new_data/test_output_path.txt',
+    auc_result, fprs, tprs = Train(path='data/test_output_path.txt',
                                    output_file='TF_Target_Disease/output_first', dim=450, window_size=2,
                                    iterations=2, batch_size=32, care_type=0, initial_lr=0.001, min_count=1,
                                    num_workers=10, random_seed=2)

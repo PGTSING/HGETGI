@@ -4,7 +4,7 @@ A heterogeneous graph embedding model for predicting interactions between transc
 
 # Overview
 
-- `new_data/` contains the necessary dataset files;
+- `data/` contains the necessary dataset files;
 - `main.py` main function for HGETGI
 
 # Requirement
@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ```
 
 # Usage
-The files in `new_data/`:
+The files in `data/`:
 - "id_TF.txt": The id of transcription factor
 - "id_Target.txt": The id of target gene
 - "id_Disease.txt": The id of disease

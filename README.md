@@ -35,5 +35,6 @@ Use *"main.py"* to train HGETGI model
 ```
 python main.py
 ```
+# HGETGI_EXE
 
 

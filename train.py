@@ -8,7 +8,7 @@ from Metapath import EmbeddingTrainer
 from sklearn.model_selection import KFold
 num_walks_per_node = 350    
 walk_length = 130
-path = "new_data"
+path = "data"
 
 def Train(path, output_file, dim, window_size, iterations, batch_size, care_type, initial_lr, min_count, num_workers,
           random_seed):

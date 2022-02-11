@@ -6,7 +6,7 @@ import pandas as pd
 import scipy.sparse as sp
 from sklearn.metrics import roc_auc_score, average_precision_score, roc_curve
 from sklearn import metrics
-path = "new_data"
+path = "data"
 np.random.seed(152)
 
 def construct_graph():
@@ -105,7 +105,7 @@ def sample(TF_names, Target_names, random_seed):
     matrix = [([0] * len(Target_names)) for i in range(len(TF_names))]
     known_associations = []
     unknown_associations = []
-    f_1 = open(os.path.join("new_data/TF_Target.txt"), "r")
+    f_1 = open(os.path.join("data/TF_Target.txt"), "r")
     for x in f_1:
         x = x.strip().split()
         x1 = int(x[0])

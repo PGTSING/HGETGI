@@ -37,6 +37,7 @@ python main.py
 ```
 # HGETGI_EXE
 The executable exe file of the HGETGI model has been uploaded to the releases directory, which can be downloaded and decompressed to predict the target genes corresponding to TF. First you should run the executable program and input the name of a TF you would like to query, and then input the number of target genes you would like to query. After the prediction, the target genes that ranking top *k* will be displayed and finally saved to the metapathTGI.csv file.
+<p></p>
 ![HGETGI_EXE](https://github.com/PGTSING/HGETGI/blob/main/picture/HGETGI_EXE.jpg)
 
 
